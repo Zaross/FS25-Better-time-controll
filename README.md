@@ -24,7 +24,7 @@ Control the time scaling conveniently using the familiar hotkeys:
 ## 🎮 **Installation**
 
 1. **Download the Mod:**
-   Get the latest version of the mod from the [Release Section](#).
+   Get the latest version of the mod from the [Release Section](https://github.com/Zaross/FS25-Better-time-controll/releases).
 
 2. **Add Files:**
    Copy the mod files into your game's mod folder:
@@ -46,7 +46,7 @@ Enable the mod in the game's mod menu.
 
 ## 🛠 **Known Issues**
 
-- No known issues at the moment. If you encounter any problems, please [open an issue](#).
+- No known issues at the moment. If you encounter any problems, please [open an issue](https://github.com/Zaross/FS25-Better-time-controll/issues).
 
 ---
 
@@ -54,14 +54,8 @@ Enable the mod in the game's mod menu.
 
 We welcome your suggestions, ideas, and contributions!
 
-- **Report a Bug:** [Create an Issue](#)
+- **Report a Bug:** [Create an Issue](https://github.com/Zaross/FS25-Better-time-controll/issues)
 - **Contribute:** Pull requests are always welcome.
-
----
-
-## 📜 **License**
-
-This project is released under the [MIT License](#).
 
 ---
 
