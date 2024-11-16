@@ -19,7 +19,7 @@ jobs:
 
       - name: Create ZIP
         run: |
-          zip -r FS25_Better_Time_Control.zip . -x ".git/*" -x ".github/*" -x ".README.md"
+          zip -r FS25_Better_Time_Control.zip . -x ".git/*" -x ".github/*" -x "README.md" -x "./README.md"
 
       - name: Create or Update Release
         uses: ncipollo/release-action@v1
