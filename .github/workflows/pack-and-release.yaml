@@ -1,9 +1,9 @@
-name: release
+name: Release on Push
 
-on: 
+on:
   push:
-    tags:
-      - '*.*.*'
+    branches:
+      - main
 
 jobs:
   release:
@@ -13,14 +13,15 @@ jobs:
         with:
           submodules: true
 
-      - name: Create zip
+      - name: Create ZIP
         run: |
-          cd ..
-          zip ${{ github.event.repository.name }}/${{ github.event.repository.name }}-${GITHUB_REF_NAME}.zip ${{ github.event.repository.name }} -r  -x "*/.git/*" -x "*/.github/*" -x "*/.git"
+          zip -r FS25_Better_Time_Control.zip . -x ".git/*" -x ".github/*" -x ".README.md"
 
-      - uses:  ncipollo/release-action@v1
+      - name: Create or Update Release
+        uses: ncipollo/release-action@v1
         with:
-          tag: '${{ github.ref_name }}'
-          artifacts: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
+          tag: 'latest'
+          name: 'FS25_Better_Time_Control'
+          artifacts: FS25_Better_Time_Control.zip
           allowUpdates: true
           artifactErrorsFailBuild: true
